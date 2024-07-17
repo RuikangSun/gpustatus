@@ -1,4 +1,4 @@
-import GPUtil as GPU
+import GPUstatus as GPU
 import sys
 # Get all device ids and their processing and memory utiliazion
 # (deviceIds, gpuUtil, memUtil) = GPU.getGPUs()
