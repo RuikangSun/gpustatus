@@ -1,15 +1,13 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
+
 
 setup(
-      name = 'GPUtil',
-      packages = ['GPUtil'],
-      version = '1.4.0',
-      description = 'GPUtil is a Python module for getting the GPU status from NVIDA GPUs using nvidia-smi.',
-      author = 'Anders Krogh Mortensen',
-      author_email = 'anderskroghm@gmail.com',
-      url = 'https://github.com/anderskm/gputil',
-      download_url = 'https://github.com/anderskm/gputil/tarball/v1.4.0',
-      keywords = ['gpu','utilization','load','memory','available','usage','free','select','nvidia'],
+      name='GPUstatus',
+      version='1.1.0',
+      packages=find_packages(),  
+      description='GPUstatus is a fork of GPUtil ( https://github.com/anderskm/gputil ) ',
+      url='https://github.com/RuikangSun/gpustatus',
+      keywords=['gpu', 'utilization', 'load', 'memory', 'available', 'usage', 'free', 'select', 'nvidia'],
       classifiers = [],
       license = 'MIT',
 )
