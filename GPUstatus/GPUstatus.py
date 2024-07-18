@@ -266,9 +266,9 @@ def showUtilization(all=False, attrList=None, useOldCode=False):
                             attrStr = ('{0:d}').format(attr)
                         elif (isinstance(attr,str)):
                             attrStr = attr;
-                        elif  (sys.version_info[0] == 2):
-                            if (isinstance(attr,unicode)):
-                                attrStr = attr.encode('ascii','ignore')
+                        # elif  (sys.version_info[0] == 2):
+                            # if (isinstance(attr,unicode)):
+                                # attrStr = attr.encode('ascii','ignore')
                         else:
                             raise TypeError('Unhandled object type (' + str(type(attr)) + ') for attribute \'' + attrDict['name'] + '\'')
                                             
@@ -291,9 +291,9 @@ def showUtilization(all=False, attrList=None, useOldCode=False):
                             attrStr = ('{0:' + minWidthStr + 'd}').format(attr)
                         elif (isinstance(attr,str)):
                             attrStr = ('{0:' + minWidthStr + 's}').format(attr);
-                        elif (sys.version_info[0] == 2):
-                            if (isinstance(attr,unicode)):
-                                attrStr = ('{0:' + minWidthStr + 's}').format(attr.encode('ascii','ignore'))
+                        # elif (sys.version_info[0] == 2):
+                            # if (isinstance(attr,unicode)):
+                                # attrStr = ('{0:' + minWidthStr + 's}').format(attr.encode('ascii','ignore'))
                         else:
                             raise TypeError('Unhandled object type (' + str(type(attr)) + ') for attribute \'' + attrDict['name'] + '\'')
                                             
