@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-      name='GPUstatus',
+      name='graphicstatus',
       version='1.1.0',
       packages=find_packages(),  
       install_requires=[],
