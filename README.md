@@ -1,5 +1,7 @@
 # GPUstatus
-Forked from GPUtil:
-https://github.com/MagicalTux/gputil/tree/patch-1
+Forked from [GPUtil](https://github.com/anderskm/gputil), Technically [support Python 3.12](https://github.com/anderskm/gputil/pull/54).
 
-Technically support Python 3.12.
+## install
+```
+pip install graphicstatus
+```
